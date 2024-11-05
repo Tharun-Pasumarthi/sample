@@ -1,3 +1,5 @@
+create table employees(emp_id number(4),e_name char(7),dob date,job char(10) references salary,mgr_id number(4),hire_date date,salary number(5),bonus number(4),Dept_no number(2) references departments);
+insert into employees values(&a,'&b','&c','&d',&e,'&f',&g,&h,&i);
 insert into employees values(&a,'&b','&c','&d',&e,'&f',&g,&h,&i);
 insert into employees values(7698,'Blake','11jul1990','Manager',7839,'01may2020',17000,null,30);
 insert into employees values(7782,'Clark','24dec1989','Manager',7839,'09jun2020',16500,null,10);
